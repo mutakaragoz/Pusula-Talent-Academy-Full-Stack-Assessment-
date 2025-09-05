@@ -15,7 +15,7 @@ DateTime HireDate)> employees)
     if (desiredEmployees.Count == 0)
     {
         Console.WriteLine("Aradiginiz kriterlere uygun calisan bulunamadi.");
-        return "{\"Names\":[],\"AverageSalary\":0,\"Min Salary\":0,\"MaxSalary\":0,\"Count\":0}";
+        return "{\"Names\":[],\"AverageSalary\":0,\"MinSalary\":0,"\"TotalSalary\":0,\"MaxSalary\":0,\"Count\":0}";
     }
     var totalSalary = desiredEmployees.Sum(e => e.Salary);
     var averageSalary = Math.Round(desiredEmployees.Average(e => e.Salary), 2);
